@@ -1,6 +1,6 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import { ReactNode, useState } from "react";
+import { useState } from "react";
 type WorkProps = {
   title: string
   img: string
@@ -91,7 +91,7 @@ function WorkSection() {
       }
     ]
   }
-  const onShowWorkDetail = (index: number, item: ReactNode) => {
+  const onShowWorkDetail = (index: number) => {
     setSelectedWorkIndex(index)
   }
 
